@@ -24,7 +24,7 @@ O "Projeto Guitarra" é um site responsivo que apresenta uma loja de guitarras c
 - Seção "Sobre" com descrição e imagem
 
 ## Tecnologias Utilizadas
-
+[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 - HTML5
 - CSS3
 - JavaScript
@@ -32,6 +32,16 @@ O "Projeto Guitarra" é um site responsivo que apresenta uma loja de guitarras c
 - [Google Fonts](https://fonts.google.com/) para as fontes.
 - [Font Awesome](https://fontawesome.com/) para os icones.
 
-## Instalação
+## Uso
+- Acesse a página para ver o cabeçalho com a logo e links para redes sociais.
+- Navegue até a seção "Sobre" para ler mais sobre a loja de guitarras.
+- Explore as animações ao rolar a página.
 
+## Contribuições
 
+Contribuições são bem-vindas! Se você tiver sugestões de melhorias ou novas funcionalidades, por favor, abra uma issue ou envie um pull request.
+1. Fork o repositório.
+2. Crie uma branch para sua feature(`git checkout -b feature/nova-feature`).
+3. Faça commit das suas alterações (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`).
+5. Abra um pull request.
