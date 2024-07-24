@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #2a3f52;
+    font-size: 1.6rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i {
+    color: #fff;
+}
+
+.header-icons {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 14px;
+}
+
+.header-icons a:hover i {
+    /* animação de zoom e retorno */
+    animation: translateY 0.8s infinite alternate;
+    color: #A54033;
+}
+
+/* Keyframe para definir etapas de uma animação personalizada */
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    } to {
+        transform: translateY(8px) scale(1.1);
+    }
+}
+
+
+/* Formataçao de botão do header */
+
+.header-button {
+    color: #fff;
+    background-color: transparent;
+    padding: 8px 24px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.8s;
+}
+
+.header-button:hover {
+    border: 1px solid #A54033;
+    background-color: #A54033;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+@media screen and (max-width:768px) {
+    .header-content {
+        width: 100%;
+        /* Quando é posto um flex direction column ele inverte as ordens do justify content e do alig itens, ou seja o justify content ele faz na vertical e o align itens faz na horizontal. */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-content i {
+        margin-top: 20px;
+    }
+
+    .header-button {
+        /* display none é para nao aparecer o conteudo */
+        display: none;
+    }
+
+}
+
+.container {
+    /* esse max width deixa o tamanho da caixa maxima de 1024px */
+    max-width: 1024px;
+    /* o margin 0 auto, deixa o expaçamento up e down 0, e as laterais direita e esquerda com auto, ou seja ele fica então no meio da página, porque esta com um auto. */
+    margin: 0 auto;
+    /* Espacamento interno dos lados direito e esquerdo ficam com 12px */
+    padding: 0 12px;
+}
+
+.bg-home {
+    position: relative;
+}
+
+/* Em CSS, ::before é um pseudo-elemento que é usado para inserir conteúdo antes do conteúdo de um elemento selecionado. Ele é utilizado para adicionar conteúdo adicional a um elemento sem precisar modificar o conteúdo real do HTML. */
+
+.bg-home::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #06121e), url("../copia-de-site/assets/img/bg-header.jpg");
+    left: 0;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.hero {
+    color: #fff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+.hero h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 950px;
+    font-size: 4.8rem;
+}
+
+.hero p {
+    text-align: center;
+    margin: 14px 0;
+}
+
+.button-products:hover {
+    animation: buttonZoom 0.8s alternate infinite;
+}
+
+@keyframes buttonZoom  {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.07);
+    }
+}
+
+.button-products {
+    padding: 14px 24px;
+    color: #FFF;
+    background-color: #a54033;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+   .hero {
+    min-height: 60vh;
+   }
+
+   .hero h1 {
+    font-size: 34px;
+    padding: 0 14px;
+    width: 100%;
+   }
+
+   .hero p {
+    font-size: 14px;
+   }
+}
