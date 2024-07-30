@@ -329,6 +329,59 @@ i {
     }
 }
 
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 54px 0;
+    color: #fff;
+}
+
+.icones-rodape {
+    display: flex;
+    gap: 24px;
+}
+
+.botao-whatsapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    transition: 0.4s;
+    z-index: 10000;
+}
+
+.botao-whatsapp img {
+    max-width: 74px;
+    transition: 0.2s;
+}
+
+.botao-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+.botao-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    top: 8px;
+    left: -144px;
+    padding: 4px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: #06121e;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.botao-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 
 
 
