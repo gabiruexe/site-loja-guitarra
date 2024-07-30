@@ -52,7 +52,7 @@ i {
 .header-icons a:hover i {
     /* animação de zoom e retorno */
     animation: translateY 0.8s infinite alternate;
-    color: #A54033;
+    color: #620317;
 }
 
 /* Keyframe para definir etapas de uma animação personalizada */
@@ -78,8 +78,8 @@ i {
 }
 
 .header-button:hover {
-    border: 1px solid #A54033;
-    background-color: #A54033;
+    border: 1px solid #620317;
+    background-color: #620317;
 }
 
 .header-logo {
@@ -311,7 +311,7 @@ i {
 }
 
 .guitar-model-info button {
-    background-color: #f98879;
+    background-color: #620317;
     color: #fff;
     border: 0;
     padding: 4px 8px;
@@ -344,6 +344,12 @@ i {
     gap: 24px;
 }
 
+@media screen and (max-width: 768px) {
+    .rodape img {
+        max-width: 400px;
+    }
+}
+
 .botao-whatsapp {
     position: fixed;
     bottom: 14px;
@@ -361,7 +367,7 @@ i {
     transform: scale(1.1);
 }
 
-.botao-whatsapp .tooltip-text {
+.botao-whatsapp .dica-texto {
     visibility: hidden;
     position: absolute;
     top: 8px;
@@ -369,14 +375,14 @@ i {
     padding: 4px;
     width: 120px;
     border-radius: 8px;
-    background-color: #06121e;
+    background-color: #620317;
     color: #fff;
     text-align: center;
     opacity: 0;
     transition: opacity 0.4s;
 }
 
-.botao-whatsapp:hover .tooltip-text {
+.botao-whatsapp:hover .dica-texto {
     visibility: visible;
     opacity: 1;
 }
