@@ -4,8 +4,8 @@ Este projeto é um site de uma loja de guitarras, criado para promover produtos 
 
 ## Indice 📋
 
-- [Descrição](#descrição)
-- [Funcionalidades](#funcionalidades)
+- [Descrição](#Descrição)
+- [Funcionalidades](#Funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação](#instalação)
 - [Uso](#uso)
@@ -14,7 +14,7 @@ Este projeto é um site de uma loja de guitarras, criado para promover produtos 
 
 ## Descrição 📝
 
-O "Projeto Guitarra" é um site responsivo que apresenta uma loja de guitarras com animações e efeitos visuais. O site inclui uma página inicial com informações sobre a loja, links para redes sociais, e uma seção "Sobre" que fornece mais detalhes sobre a loja.
+O "Strings and Tones" é um site responsivo que apresenta uma loja de guitarras com animações e efeitos visuais. O site inclui uma página inicial com informações sobre a loja, links para redes sociais, e uma seção "Sobre" que fornece mais detalhes sobre a loja.
 
 ## Funcionalidades ⚙️
 
